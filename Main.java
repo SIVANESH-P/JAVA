@@ -1,42 +1,28 @@
+import java.util.Arrays;
+
 public class Main {
-    public static void main(String[] args){
-       int x; //declaration
-       x = 25; //assignment
-       System.out.println(x);
+    public static void main(String[] args) {
+        int[] numbers= new int[4];
+        numbers[0] = 2;
+        numbers[3] = 1;
+        System.out.println(Arrays.toString(numbers));
 
-       int y = 125; //initialization
-       System.out.println(y);
+        int[] numberlist = {23,21,20,29};
+        int length = numberlist.length;
+        System.out.println(length);
+        Arrays.sort(numberlist);
+        System.out.println(Arrays.toString(numberlist));
+        //Multidimensional arrays
+        int[][][] numbers1 = new int[5][2][2];
+        numbers1[0][1][1]= 2;
+        numbers1[1][1][1]= 2;
+        System.out.println(Arrays.deepToString(numbers1));
+        double result= 10/3;
+        System.out.println(result);
 
-       String name = "Sivanesh";
-       System.out.println("My name is "+ name);
-
-       Boolean a = true;
-       System.out.println(a);
-
-       Byte boys = 127;
-       System.out.println(boys);
-
-       char symbol = 's';
-       System.out.println(symbol);
-
-       //Swapping two variables
-
-       String z = "Orange juice";
-       String q = "Mango juice";
-
-       System.out.println("z: "+z);
-       System.out.println("q: "+q);
-
-       //After swapping
-       String temp;
-       temp=z;
-       z=q;
-       q=temp;
-       System.out.println("After swapping z "+z);
-       System.out.println("After swapping q: "+q);
-
-
-
+        int x= 1;
+        x=x+2;
+        x+=2;
+        System.out.println(x);
     }
-   
 }
